@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity"
+    android:background="@color/colorAccent">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:layout_width="170dp"
+         android:layout_height="170dp"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="56dp"
+         android:id="@+id/setting_image"
+         android:src="@drawable/profile" />
+
+     <TextView
+
+         android:id="@+id/tv_setting_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="236dp"
+         android:text="Displaly Name"
+         android:textColor="#fff"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_setting_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_setting_name"
+        android:layout_centerHorizontal="true"
+        android:text="@string/default_status"
+        android:textColor="#fff" />
+
+     <Button
+         android:id="@+id/btn_setting_image"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="187dp"
+         android:text="change image" />
+
+     <Button
+         android:id="@+id/btn_setting_status"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/btn_setting_image"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="-187dp"
+         android:text="change status" />
+
+</RelativeLayout>
